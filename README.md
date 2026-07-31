@@ -1,53 +1,51 @@
-# Monodrive skill
+# Monodrive skills
 
 Monodrive is a Brain: durable memory for whatever matters to you, held on a
 server and reached over MCP. Your agent looks things up in it before answering
 and writes things down as they land, without being asked each time.
 
-This repo is the skill that teaches it how. Version 1.2.0.
+This repo holds the skills that teach it how.
+
+| Skill | What it does |
+| --- | --- |
+| `monodrive-query` | Answers a question from the Brain, with citations |
+| `monodrive-capture` | Writes something into the Brain so it survives the session |
+| `monodrive-setup` | Walks you through connecting the MCP server and signing in |
+| `monodrive-update` | Installs the skills, or updates them to the latest version |
 
 ## Install
 
-```bash
-git clone https://github.com/felixkrrr/monodrive ~/.claude/skills/monodrive
-```
-
-Then sign in at https://app.monodrive.ai/login — a magic link, no password, and signing in for the
-first time creates your Workspace — and connect your agent:
+Each folder is its own skill and goes in at the top level of a skills directory.
+Install globally so they work in every project:
 
 ```bash
-claude mcp add --transport http monodrive https://app.monodrive.ai/mcp
+git clone --depth 1 https://github.com/felixkrrr/monodrive-skills /tmp/monodrive-skills && cp -R /tmp/monodrive-skills/monodrive-* ~/.claude/skills/ && rm -rf /tmp/monodrive-skills
 ```
 
-It's recommended to install this skill globally in claude / codex or other agents so its available everywhere. Confirm with the user.
+To scope them to a single repo instead, use that repo's `.claude/skills/`.
 
-Run `/mcp`, pick Monodrive, approve in the browser. Or just ask your agent to
-set up Monodrive once the skill is installed; it will walk you through it.
-
-Don't set an `Authorization` header or paste an API key. The server uses OAuth,
-and a hand-set header stops the sign-in flow from running at all.
+That's the skills installed, not Monodrive connected. Start a new session and ask
+your agent to set up Monodrive — `monodrive-setup` takes it from there: signing in,
+connecting the MCP server, and checking it actually works.
 
 ## Updating
 
-The skill does not update itself, on purpose — nothing changes under you.
+The skills don't update themselves, on purpose — nothing changes under you. Ask
+your agent to update Monodrive and `monodrive-update` handles it: it finds where
+the skills are installed, compares versions against this repo, and replaces only
+what moved.
+
+## Removing them
 
 ```bash
-git -C ~/.claude/skills/monodrive pull
+rm -rf ~/.claude/skills/monodrive-*
 ```
 
-Or ask your agent to check for a newer version.
-
-## Removing it
-
-```bash
-rm -rf ~/.claude/skills/monodrive
-```
-
-Your Brain is untouched; it lives on the server. Delete the data itself from
-your Workspace settings.
+Your Brain is untouched; it lives on the server. Delete the data itself from your
+Workspace settings.
 
 ## What's in here
 
-`SKILL.md` and three reference files, all prose you can read. An agent
-instruction file you cannot inspect is one you have to take on trust, and this
-one is entirely about your own notes.
+Four `SKILL.md` files, all prose you can read. An agent instruction file you
+cannot inspect is one you have to take on trust, and these are entirely about
+your own notes.
