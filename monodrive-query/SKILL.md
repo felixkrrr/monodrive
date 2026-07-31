@@ -1,5 +1,6 @@
 ---
 name: monodrive-query
+version: 0.1.0
 description: Answer a question from the Monodrive Brain with grounded, cited retrieval. Use when the user asks what we know about something, who someone is, what was decided, what happened, who is connected to whom, what constrains what, or asks to look something up, search, or get background — and whenever a task needs context the Brain plausibly holds.
 ---
 
