@@ -4,12 +4,12 @@ Monodrive is a Brain: durable memory for whatever matters to you, held on a
 server and reached over MCP. Your agent looks things up in it before answering
 and writes things down as they land, without being asked each time.
 
-This repo is the skill that teaches it how. Version 1.1.0.
+This repo is the skill that teaches it how. Version 1.2.0.
 
 ## Install
 
 ```bash
-git clone https://github.com/felixkrrr/monodrive-skill ~/.claude/skills/monodrive
+git clone https://github.com/felixkrrr/monodrive ~/.claude/skills/monodrive
 ```
 
 Then sign in at https://app.monodrive.ai/login — a magic link, no password, and signing in for the
