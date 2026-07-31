@@ -1,19 +1,23 @@
 # Writing to the Brain
 
-## Worth a page?
+## Capture, and what shape to capture it in
 
-Write it when it will still be true, or still matter, a month from now. That is
-the whole test — what follows is illustration, not a checklist. This Brain's
-subjects are whatever its owner works on.
+Capture anything that might be useful later. The bar is low on purpose — the
+cost of a fact you never need again is nearly nothing, and the cost of one you
+needed and did not keep is the whole point of having a Brain.
 
-Yes: people and the organisations they belong to, what got decided and why, what
-came out of a meeting, facts about a customer someone will need again, anything
-the user tells you to remember.
+The real judgement is not _whether_ to capture but _where_ it goes:
 
-No: what you are doing this session, how the user likes you to work, anything
-the repo or a ticket already records, things you worked out that nobody said.
+- **A whole subject gets its own page.** A person, an organisation, a decision,
+  a meeting, a project — anything you would expect to accumulate more about
+  later, and anything you would want to link to from elsewhere.
+- **Everything smaller becomes a line on a page that already exists.** A detail
+  about someone, how a decision turned out, what came of a commitment. Borderline
+  usually means a line in an existing page, not a new page.
 
-Borderline usually means a line in an existing page, not a new page.
+When you genuinely cannot tell — whether it is worth keeping at all, or which
+page it belongs on — ask. One short question costs less than a wrong page, and
+the user knows things about what matters to them that you cannot infer.
 
 ## The sequence
 

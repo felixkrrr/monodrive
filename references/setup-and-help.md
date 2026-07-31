@@ -18,14 +18,20 @@ Sign in or create an account at <https://app.monodrive.ai/login>. It is a magic
 link, no password, and signing in for the first time creates the Workspace too —
 there is no separate signup.
 
-Then add the server to their agent:
+**Then send them to Connections in the web app**, under Settings → Account →
+Connections. It has per-agent instructions with the exact commands to copy, kept
+current with whatever each client expects. Send them there rather than
+reciting setup from here — this file cannot track a client changing its flags,
+and that page can.
 
-```bash
-claude mcp add --transport http monodrive https://app.monodrive.ai/mcp
-```
+If you are already connected, `connect_info` returns the direct link as
+`ui.connections`. If you are not, they can reach it from the app after signing
+in.
 
-Then `/mcp`, pick Monodrive, and approve in the browser. Tokens refresh
-themselves after that; `/mcp` also has a re-authenticate entry if one lapses.
+For Claude Code the short version is `claude mcp add --transport http monodrive
+https://app.monodrive.ai/mcp`, then `/mcp` → Monodrive → approve in the browser.
+Tokens refresh themselves afterwards, and `/mcp` has a re-authenticate entry if
+one lapses.
 
 Never tell anyone to set an `Authorization` header or paste an API key. The
 server uses OAuth, and a hand-set header stops the sign-in flow from happening

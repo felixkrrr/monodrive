@@ -1,14 +1,27 @@
 ---
 name: monodrive
-version: 1.0.1
+version: 1.1.0
 description: The user's Monodrive brain — durable memory for whatever matters to them, reached over MCP. Use when they ask what is known about a person, an organisation, a past decision, a meeting, or any subject their notes might cover; when they say to remember, save, note, or file something; and for Monodrive setup, updates, or schema work.
 ---
 
 # Monodrive
 
-A Brain the user keeps across sessions, projects and tools: people, decisions,
-meetings, customers — whatever has turned out to matter to them. It lives on a
-server and you reach it through the Monodrive MCP tools.
+A Brain the user keeps across sessions, projects and tools, reached over MCP.
+
+## How it works
+
+- Any of their agents connects to the same Brain over MCP and can read from it
+  and write to it. Context stored from one tool is there in the next.
+- It ships with a small mental model — people and organisations — and grows from
+  there. `schema_get` is always the authority on what it currently knows.
+- Entries link to each other, so a page about someone accumulates a history
+  nobody had to maintain by hand.
+- Anything that does not fit a kind it knows still lands, under the fallback
+  kind `page`, labelled with your word for what it is.
+- **That is the whole design.** What matches a known kind gets written precisely,
+  because every kind carries its own instructions. What doesn't is never
+  refused — it is kept as-is, and reviewing the mess later is what teaches the
+  Brain its next shape. It learns from what people actually write.
 
 It is only worth having if you use it without being asked.
 
@@ -20,13 +33,17 @@ the answer would more plausibly be in their notes than in the code in front of
 you. Always look before you write, so you extend a page instead of creating a
 second one for the same thing.
 
-**Write things down** when a decision lands with a reason, a durable fact
-surfaces, someone commits to something, or the user corrects you. The test is
-whether it will still matter in a month. Say it in one line — "noted that in
+**Write things down** whenever something might be useful later. The bar is low:
+a fact never needed again costs almost nothing, one you needed and did not keep
+costs the point of the Brain. Say it in one line — "noted that in
 `decisions/pricing-model`" — and carry on.
 
-Skip session state, how the user likes you to work, and anything the repo or a
-ticket already records. Not every mention deserves a page.
+The judgement is where it goes, not whether. Whole subjects — a person, a
+decision, a meeting — get their own page; smaller things become a line on a page
+that already exists. If you cannot tell, ask.
+
+Session state and how the user likes you to work are agent memory, not Brain
+memory. Everything else is fair game.
 
 Loading this skill is not an event. It is installed everywhere, so it will come
 up during work that has nothing to do with the Brain — when it does, say nothing
@@ -62,14 +79,9 @@ matter most:
 
 ## The Schema
 
-`schema_get` says which kinds of page this Brain knows — that is the authority,
-never the examples in this file. It starts small and grows with use, so
-something that fits none of the current kinds is a reason to capture it, not to
-skip it.
-
-When pages of a type keep coming out wrong, the fix is usually that type's
+When pages of a kind keep coming out wrong, the fix is usually that kind's
 `instructions`, not its shape. See `references/schema.md` for both, and for
-spotting when untyped pages have earned a type of their own.
+spotting when untyped pages have earned a kind of their own.
 
 ## Setup and help
 
