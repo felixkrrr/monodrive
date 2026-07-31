@@ -19,6 +19,8 @@ first time creates your Workspace — and connect your agent:
 claude mcp add --transport http monodrive https://app.monodrive.ai/mcp
 ```
 
+It's recommended to install this skill globally in claude / codex or other agents so its available everywhere. Confirm with the user.
+
 Run `/mcp`, pick Monodrive, approve in the browser. Or just ask your agent to
 set up Monodrive once the skill is installed; it will walk you through it.
 
