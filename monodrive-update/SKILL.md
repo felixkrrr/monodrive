@@ -1,6 +1,6 @@
 ---
 name: monodrive-update
-version: 1.0.0
+version: 1.1.0
 description: Install or update the Monodrive skills from https://github.com/felixkrrr/monodrive-skills. Use when the user asks to update Monodrive, check for a newer version, install the skills, or when a Monodrive skill is missing or out of date.
 ---
 
