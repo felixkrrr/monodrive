@@ -1,6 +1,6 @@
 ---
 name: monodrive
-version: 1.0.0
+version: 1.0.1
 description: The user's Monodrive brain — durable memory for whatever matters to them, reached over MCP. Use when they ask what is known about a person, an organisation, a past decision, a meeting, or any subject their notes might cover; when they say to remember, save, note, or file something; and for Monodrive setup, updates, or schema work.
 ---
 
@@ -71,11 +71,23 @@ When pages of a type keep coming out wrong, the fix is usually that type's
 `instructions`, not its shape. See `references/schema.md` for both, and for
 spotting when untyped pages have earned a type of their own.
 
-## Setup, help, and updates
+## Setup and help
 
 Read `references/setup-and-help.md` when the user asks about setting Monodrive
-up, when they ask about Monodrive but the MCP tools are missing or failing, or
-when they want to check for a newer version of this skill.
+up, or when they ask about Monodrive but the MCP tools are missing or failing.
+
+## Checking for a newer version
+
+This skill never updates itself. Offer when they ask about Monodrive's own
+behaviour, or hit something that reads like an already-fixed bug.
+
+```bash
+curl -s https://raw.githubusercontent.com/felixkrrr/monodrive-skill/main/VERSION
+```
+
+Compare it with the `VERSION` file next to this one. If it moved,
+`git -C ~/.claude/skills/monodrive pull` — or re-clone from
+`https://github.com/felixkrrr/monodrive-skill`. It applies from the next session.
 
 ## Talking about it
 

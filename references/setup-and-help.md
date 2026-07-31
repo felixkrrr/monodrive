@@ -74,25 +74,5 @@ another memory or notes system has its own "check this first" rule in there, say
 so plainly — two such rules compete, the agent follows whichever it read last,
 and the user sees the Brain work intermittently. Offer to split them by subject.
 
-## Updates
-
-This skill does not update itself. Check the published version against theirs:
-
-```bash
-curl -s https://raw.githubusercontent.com/felixkrrr/monodrive-skill/main/VERSION
-```
-
-Compare with the local `VERSION` file next to `SKILL.md`. If it is newer:
-
-```bash
-git -C ~/.claude/skills/monodrive pull
-```
-
-If it was not installed with git, re-clone it:
-
-```bash
-git clone https://github.com/felixkrrr/monodrive-skill ~/.claude/skills/monodrive
-```
-
-Tell them what changed if the repo makes it obvious, and that the new version
-applies to the next session.
+Checking for a newer version of this skill is in `SKILL.md` — it needs no
+setup context and should not cost a read of this file.
