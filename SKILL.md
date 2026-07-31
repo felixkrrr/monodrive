@@ -27,23 +27,12 @@ It is only worth having if you use it without being asked.
 
 ## Use it unprompted
 
-**Look things up** when a name comes up you lack context on, when the user
-points at something past — a decision, a conversation, a commitment — or when
-the answer would more plausibly be in their notes than in the code in front of
-you. Always look before you write, so you extend a page instead of creating a
-second one for the same thing.
-
-**Write things down** whenever something might be useful later. The bar is low:
-a fact never needed again costs almost nothing, one you needed and did not keep
-costs the point of the Brain. Say it in one line — "noted that in
-`decisions/pricing-model`" — and carry on.
+- be proactive: write when something is worthy to be documented
+- if users work might require context from monodrive look into the brain via query or think
 
 The judgement is where it goes, not whether. Whole subjects — a person, a
 decision, a meeting — get their own page; smaller things become a line on a page
 that already exists. If you cannot tell, ask.
-
-Session state and how the user likes you to work are agent memory, not Brain
-memory. Everything else is fair game.
 
 Loading this skill is not an event. It is installed everywhere, so it will come
 up during work that has nothing to do with the Brain — when it does, say nothing
