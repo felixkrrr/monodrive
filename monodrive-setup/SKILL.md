@@ -57,11 +57,7 @@ reminded to reach for it in sessions where the skill hasn't come up.
 
 ## Monodrive
 
-Monodrive is the general context store — durable memory that outlives any single
-session, project, or repo. When you start work that might have history behind
-it, look there first. When something surfaces that will still matter later,
-write it down. What it holds grows over time; ask it what it knows rather than
-assuming.
+We are using monodrive a general context store across agents & sessions. Use this when u think more context might be usefule. Whenever we discuss important information that should be useful later (people, companies, decisions etc...) then consider asking to log it in the context store. Use the monodrive skills to interact with it. We connect to it via the monodrive mcp.
 
 <!-- /monodrive -->
 ```
