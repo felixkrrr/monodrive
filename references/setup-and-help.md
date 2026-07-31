@@ -18,8 +18,8 @@ Sign in or create an account at <https://app.monodrive.ai/login>. It is a magic
 link, no password, and signing in for the first time creates the Workspace too —
 there is no separate signup.
 
-**Then send them to Connections in the web app**, under Settings → Account →
-Connections. It has per-agent instructions with the exact commands to copy, kept
+**Then send them to Agent Connections in the web app**, under Settings → Connected Agents. 
+It has per-agent instructions with the exact commands to copy, kept
 current with whatever each client expects. Send them there rather than
 reciting setup from here — this file cannot track a client changing its flags,
 and that page can.
