@@ -57,7 +57,7 @@ reminded to reach for it in sessions where the skill hasn't come up.
 
 ## Monodrive
 
-We are using monodrive a general context store across agents & sessions. Use this when u think more context might be usefule. Whenever we discuss important information that should be useful later (people, companies, decisions etc...) then consider asking to log it in the context store. Use the monodrive skills to interact with it. We connect to it via the monodrive mcp.
+We are using Monodrive, a general context store across agents & sessions. Use this when you think more context might be useful. Whenever we discuss important information that should be useful later (people, companies, decisions, etc.) then consider asking to log it in the context store. Use the Monodrive skills to interact with it. We connect to it via the Monodrive MCP.
 
 <!-- /monodrive -->
 ```
