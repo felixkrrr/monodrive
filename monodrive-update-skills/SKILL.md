@@ -1,5 +1,5 @@
 ---
-name: monodrive-update
+name: monodrive-update-skills
 version: 1.1.0
 description: Install or update the Monodrive skills from https://github.com/felixkrrr/monodrive-skills. Use when the user asks to update Monodrive, check for a newer version, install the skills, or when a Monodrive skill is missing or out of date.
 ---
@@ -18,9 +18,9 @@ ls -d ~/.claude/skills/monodrive-* ./.claude/skills/monodrive-* 2>/dev/null
 ```
 
 Nothing there? Go to **Install**. Found in more than one place? Tell the user and
-ask which to update. Some folders present but not all four (`monodrive-query`,
-`monodrive-capture`, `monodrive-setup`, `monodrive-update`) — update what's there
-and install the rest alongside it.
+ask which to update. Some folders present but not all five (`monodrive-query`,
+`monodrive-capture`, `monodrive-manage-auto-ingestion`, `monodrive-setup`,
+`monodrive-update-skills`) — update what's there and install the rest alongside it.
 
 ## Install
 

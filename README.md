@@ -10,8 +10,9 @@ This repo holds the skills that teach it how.
 | --- | --- |
 | `monodrive-query` | Answers a question from the Brain, with citations |
 | `monodrive-capture` | Writes something into the Brain so it survives the session |
+| `monodrive-manage-auto-ingestion` | Sets up and maintains automated inflow from outside sources |
 | `monodrive-setup` | Walks you through connecting the MCP server and signing in |
-| `monodrive-update` | Installs the skills, or updates them to the latest version |
+| `monodrive-update-skills` | Installs the skills, or updates them to the latest version |
 
 ## Install
 
@@ -31,9 +32,9 @@ connecting the MCP server, and checking it actually works.
 ## Updating
 
 The skills don't update themselves, on purpose — nothing changes under you. Ask
-your agent to update Monodrive and `monodrive-update` handles it: it finds where
-the skills are installed, compares versions against this repo, and replaces only
-what moved.
+your agent to update Monodrive and `monodrive-update-skills` handles it: it finds
+where the skills are installed, compares versions against this repo, and replaces
+only what moved.
 
 ## Removing them
 
@@ -46,6 +47,6 @@ Workspace settings.
 
 ## What's in here
 
-Four `SKILL.md` files, all prose you can read. An agent instruction file you
+Five `SKILL.md` files, all prose you can read. An agent instruction file you
 cannot inspect is one you have to take on trust, and these are entirely about
 your own notes.
